@@ -1,0 +1,11 @@
+# HexStrike AI MCP API Keys File
+# Add your API keys/secrets below in KEY=VALUE format (one per line).
+# Lines starting with # are comments and will be ignored.
+# Example:
+# OPENAI_API_KEY=sk-xxxxxxx
+# CLAUDE_API_KEY=xxxxxxx
+# NUCLEI_API_KEY=yyyyyyy
+
+OPENAI_API_KEY=
+CLAUDE_API_KEY=
+NUCLEI_API_KEY=
