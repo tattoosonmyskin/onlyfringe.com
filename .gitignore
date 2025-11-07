@@ -6,3 +6,29 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Database
+*.db
+onlyfringe.db
+
+# Test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+venv/
+env/
+ENV/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
