@@ -1,0 +1,8 @@
+# HexStrike AI API Keys - do not commit secrets
+.hexstrike_api_keys
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
