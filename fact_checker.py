@@ -1,7 +1,9 @@
 """
 AI Fact-Checking Module using OpenAI API
 """
+import json
 import openai
+import validators
 from config import Config
 
 class FactChecker:
@@ -75,7 +77,6 @@ Provide your analysis in the following JSON format:
                 response_format={"type": "json_object"}
             )
             
-            import json
             result = json.loads(response.choices[0].message.content)
             return result
             
@@ -151,7 +152,6 @@ Provide your analysis in the following JSON format:
                 response_format={"type": "json_object"}
             )
             
-            import json
             result = json.loads(response.choices[0].message.content)
             return result
             
@@ -173,8 +173,6 @@ Provide your analysis in the following JSON format:
         Returns:
             dict with validation results for each source
         """
-        import validators
-        
         results = []
         for source in sources:
             url = source.get('url', '')
