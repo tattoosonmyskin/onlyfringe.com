@@ -1,6 +1,4 @@
-# onlyfringe.com
-
-**OnlyFringe** - A Fact-Based Debate Platform with AI Verification
+# OnlyFringe - A Fact-Based Debate Platform with AI Verification
 
 ## Overview
 
