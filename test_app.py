@@ -4,7 +4,6 @@ Tests for OnlyFringe Platform
 import pytest
 import json
 from app import app, db
-from models import User, Argument, Source, Rebuttal, RebuttalSource
 
 @pytest.fixture
 def client():
