@@ -25,5 +25,5 @@ class Config:
     MIN_ARGUMENT_LENGTH = 100
     
     # AI model configuration
-    AI_MODEL = 'gpt-4'
+    AI_MODEL = 'gpt-4-1106-preview'
     AI_TEMPERATURE = 0.3  # Lower temperature for more factual responses
