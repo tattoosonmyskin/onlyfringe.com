@@ -74,7 +74,8 @@ Provide your analysis in the following JSON format:
                     {"role": "user", "content": prompt}
                 ],
                 temperature=Config.AI_TEMPERATURE,
-                response_format={"type": "json_object"}
+                response_format={"type": "json_object"},
+                timeout=30.0
             )
             
             result = json.loads(response.choices[0].message.content)
