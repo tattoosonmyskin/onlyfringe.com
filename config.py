@@ -23,6 +23,7 @@ class Config:
     MIN_SOURCES_REQUIRED = 2
     MAX_ARGUMENT_LENGTH = 5000
     MIN_ARGUMENT_LENGTH = 100
+    MIN_APPROVAL_SCORE = 70
     
     # AI model configuration
     AI_MODEL = 'gpt-4-1106-preview'

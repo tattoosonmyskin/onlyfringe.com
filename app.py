@@ -166,7 +166,7 @@ def submit_argument():
     argument.ai_fact_check_result = json.dumps(fact_check_result)
     
     # Determine verification status based on AI result
-    if fact_check_result.get('is_valid') and fact_check_result.get('score', 0) >= 70:
+    if fact_check_result.get('is_valid') and fact_check_result.get('score', 0) >= Config.MIN_APPROVAL_SCORE:
         argument.verification_status = 'approved'
         argument.is_verified = True
     else:
@@ -245,7 +245,7 @@ def submit_rebuttal(argument_id):
     rebuttal.ai_fact_check_result = json.dumps(fact_check_result)
     
     # Determine verification status based on AI result
-    if fact_check_result.get('is_valid') and fact_check_result.get('score', 0) >= 70:
+    if fact_check_result.get('is_valid') and fact_check_result.get('score', 0) >= Config.MIN_APPROVAL_SCORE:
         rebuttal.verification_status = 'approved'
         rebuttal.is_verified = True
     else:
