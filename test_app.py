@@ -2,7 +2,6 @@
 Tests for OnlyFringe Platform
 """
 import pytest
-import json
 from app import app, db
 
 @pytest.fixture
