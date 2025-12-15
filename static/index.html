@@ -242,8 +242,11 @@
         </div>
         
         <footer>
-            <p>&copy; 2024 OnlyFringe - Elevating Public Discourse Through Facts</p>
+            <p>&copy; <span id="copyright-year"></span> OnlyFringe - Elevating Public Discourse Through Facts</p>
         </footer>
     </div>
+    <script>
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
