@@ -16,15 +16,12 @@ CORS(app)
 
 # Initialize database
 db.init_app(app)
+# Create tables once at startup
+with app.app_context():
+    db.create_all()
 
 # Initialize fact checker
 fact_checker = FactChecker()
-
-@app.before_request
-def create_tables():
-    """Create database tables if they don't exist"""
-    db.create_all()
-
 @app.route('/')
 def index():
     """Serve the main landing page"""
